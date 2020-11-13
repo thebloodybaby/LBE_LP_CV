@@ -1,0 +1,384 @@
+@charset "utf-8";
+
+html{
+	width: 100%;
+}
+body{
+    background-color:#1f1f1f;
+    margin: 0px;
+	padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#main{
+    background-color: #F4F7FF;
+    box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-image: url(images/bg.jpg);
+}
+
+nav{
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-around;
+    letter-spacing: 3px;
+    padding: 10px 40px ;
+    background-color:#F4F7FF;
+    font-family: sans-serif;
+    position: fixed;
+    top:0;
+    left: 0;
+    box-shadow:2px 2px 30px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+	width: 100%;
+	z-index: 1; /*ngatur tumpukan supaya jadi paling atas*/
+	
+}
+
+.tombol{
+	display: flex;
+	margin-left: -3%;
+}
+
+.tombol a{
+    color: #444444;
+    font-size: 15px;
+	padding: 10px 10px;
+}
+
+.tombol a:hover{
+    background-color: #292929;
+    color: white !important;
+    padding: 10px 10px;
+
+}
+
+.hal1{
+	color: black;
+	font-family: Trebuchet MS;
+	position: relative;
+	top: 30%;
+	left: 30%;
+	width: 600px; 
+}
+
+.hello{
+	font-size: 40px;
+	letter-spacing: 40px;
+	text-transform: uppercase;
+
+}
+
+.hal1 h1{
+	font-family: serif;
+	letter-spacing: px;
+	font-size: 400%;
+	font-style: italic;
+	margin-top: -1%;
+	margin-bottom: auto;
+}
+
+.hal1 h1:hover{
+	color: goldenrod;
+}
+
+.siapa{
+	margin-top: 20px;
+	font-family: monospace;
+	font-size: 	130%;
+	letter-spacing: 1px;
+}
+
+.readmore, .downloadcv{
+	color: #1f1f1f;
+	background-color: rgb(252, 219, 88);
+	font-size: 15px;
+	box-sizing: border-box;
+	padding: 0px 9px 0px 9px;
+	border: 2px outset #868686;
+	font-family: 'calibri';
+}
+
+.downloadcv{
+	margin-left: 5%;
+}
+
+.readmore:hover{
+	background-color: #1f1f1f;
+    color: rgb(252, 219, 88);
+}
+
+.downloadcv:hover{
+	background-color: #1f1f1f;
+    color: rgb(252, 219, 88);
+}
+
+#about{
+	background-color: #1f1f1f;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	padding: 7% 5% 0px 5%;
+	display: flex;
+}
+
+.about1{
+	color: #F4F7FF;
+	font-family: 'calibri';
+	padding-left: 5%;
+	width: 100%;
+}
+
+.about1 h1{
+	color: rgb(255, 231, 134);
+	font-family: monospace;
+	font-size: 500%;
+	font-weight: 1000;
+}
+
+.about1 h2{
+	font-size: 30px;
+	font-family: monospace;
+	font-weight: 500;
+}
+
+.foto img{
+	/* padding-right: 0px; */
+	margin-top: 60px;
+	border-radius: 100%;
+	margin-right: 20%;
+	width:70%; 
+	height:55%;
+	border: 5px solid rgb(248, 214, 75);
+}
+
+.foto:hover{
+	opacity: 0.7;
+}
+
+#skills{
+	height: 100vh;
+	position: relative;
+	padding: 5% 5% 0px 5%;
+}
+
+.skillku h1{
+	color: rgb(255, 231, 134);
+	font-family: monospace;
+	font-size: 500%;
+	font-weight: 1000;
+}
+
+.skillkuh{
+	display:grid;
+    list-style-type:none;
+	margin:0;
+	padding:0;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+}
+
+.skillkuh li{
+	list-style: none;
+	background-color: rgb(255, 231, 134);
+	color: #1f1f1f;
+	font-family: monospace;
+	text-transform: uppercase;
+	font-size: 25px;
+	border-radius: 20px;
+	text-align: center;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	/* padding-right: -50%; */
+	margin-bottom: 50px;
+	margin-right: 70px;
+}
+
+.skillkuh li:hover{
+	transform: translateY(-10%);
+	background-color: goldenrod;
+	transition: all 0.3s;
+    transform: scale(1.3);
+    box-shadow: 2px 2px 6px rgba(252, 226, 157, 0.5);
+
+}
+
+#educations{
+	box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
+	background-color: #F4F7FF;
+	position: relative;
+	padding: 3% 5% 0px 5%;
+	
+}
+.eduheader h1{
+	margin-top: 5%;
+	color: #1f1f1f;
+	text-transform: uppercase;
+	font-family: monospace;
+	font-size: 500%;
+	letter-spacing: 10px;
+	margin-bottom: auto;
+}
+
+.container{
+	margin-top: 3%;
+}
+
+.boxes{
+	display:grid;
+    list-style-type:none;
+    margin:0;padding:0;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+.box1, .box2, .box3, .box4{
+	border: 2px solid #1f1f1f;
+	box-sizing: border-box;
+	background-color:rgba(0, 0, 0, 0.788);
+	border-radius: 20px;
+	padding: 5px 20px 5px 20px;
+	margin: 10px 50px 30px 30px;
+	box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.box2{
+	padding-bottom: 30px;
+}
+
+.eduyear{
+	color: rgb(255, 231, 134);
+	/* background-color: black; */
+	margin-bottom: -10px;
+	/* padding: px 10px 10px 10px;  */
+	font-family: monospace;
+	font-size: 150%;
+}
+
+.edudetails{
+	color: #F4F7FF;
+	/* background-color: #F4F7FF; */
+	text-align: justify;
+	font-family: monospace;
+}
+
+.eduname{
+	font-size: 150%;
+	text-transform: uppercase;
+	color: #1f1f1f;
+}
+
+
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover{
+	transform: translateY(-3%);
+}
+
+
+#contacts{
+	box-sizing: border-box;
+	background-color: #1f1f1f;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	padding: 5% 5% 0px 5%;
+}
+
+.cheader{
+	color: rgb(255, 231, 134);
+	font-size: 300%;
+	font-family: monospace;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+
+}
+
+
+/*
+@media(max-width:1190px){
+	#main{
+		background-size: 1150px !important;
+		
+	}
+	.name{
+		left: 10%;
+		top: 50%;
+		transform: translate(-10%,-50%);
+	}
+	
+
+}
+
+@media(max-width:970px){
+	.name{
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+	}
+}
+
+@media(max-width:900px){
+	nav{
+		padding:10px 30px;
+	}
+	
+	nav ul{
+		position:absolute;	
+		width: 100%;
+		height:auto;
+		box-sizing:border-box;
+		background-color:#0F0F0F;
+		top: 50px;
+		left: 0;
+		transition: 0.5s;
+		overflow: hidden;
+		display: none !important;
+		border:3px solid #1F1F1F;
+	}
+	
+		nav ul li a{
+		border-bottom: 1px solid rgba(255,255,255,0.10) ;
+		color:#ffffff !important;
+		width: 100%;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0px !important;
+		padding: 0px !important;
+	}
+		nav ul{
+			padding:0px;
+			margin:0px;
+		}
+	
+		nav ul li a:hover{
+			background-color:rgba(27,29,32,0.15);
+
+			}
+	
+}
+
+
+
+@media(max-width:600px){
+    .judulnama{
+		width:60%;
+    }
+    nav{
+		padding:10px 30px;
+	}
+    
+}
+ */
