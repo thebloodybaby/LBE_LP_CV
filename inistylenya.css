@@ -153,8 +153,8 @@ nav{
 	margin-top: 60px;
 	border-radius: 100%;
 	margin-right: 20%;
-	width:70%; 
-	height:55%;
+	width:65%; 
+	height:60%;
 	border: 5px solid rgb(248, 214, 75);
 }
 
@@ -173,6 +173,14 @@ nav{
 	font-family: monospace;
 	font-size: 500%;
 	font-weight: 1000;
+}
+
+.skillku p{
+	color: #F4F7FF;
+	font-family: monospace;
+	font-size: 150%;
+	margin-top: -5%;
+	margin-bottom: 5%;
 }
 
 .skillkuh{
@@ -218,15 +226,24 @@ nav{
 	padding: 3% 5% 0px 5%;
 	
 }
+
+.eduheader{
+	color: #1f1f1f;
+	font-family: monospace;
+}
 .eduheader h1{
 	margin-top: 5%;
-	color: #1f1f1f;
 	text-transform: uppercase;
-	font-family: monospace;
 	font-size: 500%;
 	letter-spacing: 10px;
 	margin-bottom: auto;
 }
+
+.eduheader p{
+	font-size: 150%;
+	margin-top: 0%;
+}
+
 
 .container{
 	margin-top: 3%;
@@ -297,88 +314,77 @@ nav{
 
 .cheader{
 	color: rgb(255, 231, 134);
-	font-size: 300%;
 	font-family: monospace;
+}
+
+.cheader h1{
+	font-size: 300%;
 	text-transform: uppercase;
 	letter-spacing: 10px;
+}
+
+.cheader p{
+	margin-top: -3%;
+	font-size: 100%;
+	letter-spacing: 2px;
+	color: #F4F7FF;
+}
+
+.contactku{
+	list-style-type:none;
+	display: grid;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+    grid-template-columns: repeat(2, auto);
+    /* grid-template-rows: repeat(2, auto); */
+}
+
+.contactku i{
+	color: white;
+	font-size: 50px;
+	justify-content: center;
 
 }
 
-
-/*
-@media(max-width:1190px){
-	#main{
-		background-size: 1150px !important;
-		
-	}
-	.name{
-		left: 10%;
-		top: 50%;
-		transform: translate(-10%,-50%);
-	}
-	
-
-}
-
-@media(max-width:970px){
-	.name{
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%,-50%);
-	}
-}
-
-@media(max-width:900px){
-	nav{
-		padding:10px 30px;
-	}
-	
-	nav ul{
-		position:absolute;	
-		width: 100%;
-		height:auto;
-		box-sizing:border-box;
-		background-color:#0F0F0F;
-		top: 50px;
-		left: 0;
-		transition: 0.5s;
-		overflow: hidden;
-		display: none !important;
-		border:3px solid #1F1F1F;
-	}
-	
-		nav ul li a{
-		border-bottom: 1px solid rgba(255,255,255,0.10) ;
-		color:#ffffff !important;
-		width: 100%;
-		height: 50px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 0px !important;
-		padding: 0px !important;
-	}
-		nav ul{
-			padding:0px;
-			margin:0px;
-		}
-	
-		nav ul li a:hover{
-			background-color:rgba(27,29,32,0.15);
-
-			}
-	
+.contactku p{
+	color: rgb(248, 214, 75);
+	font-family: monospace;
+	margin-left: 8%;
+	font-size: 20px;
 }
 
 
-
-@media(max-width:600px){
-    .judulnama{
-		width:60%;
-    }
-    nav{
-		padding:10px 30px;
-	}
-    
+.instagram a,
+.facebook a,
+.line a,
+.nohp a,
+.linkedin a,
+.github a{
+	display: flex;
+	margin-bottom: 3%;
+	justify-content: left;
+	margin-right: -1%;
 }
- */
+
+.alamat,
+.email a{
+	margin-top: 2%;
+	display: flex;
+	margin-bottom: 0%;
+	justify-content: left;
+	margin-right: -1%;
+}
+
+
+.alamat p:hover,
+.email p:hover,
+.instagram p:hover,
+.line p:hover,
+.linkedin p:hover,
+.facebook p:hover,
+.nohp p:hover,
+.github p:hover{
+	color:#F4F7FF;
+}
+
