@@ -65,7 +65,9 @@ nav{
 	top: 30%;
 	left: 30%;
 	width: 600px; 
+	background-size: cover;
 }
+
 
 .hello{
 	font-size: 40px;
@@ -189,7 +191,9 @@ nav{
 	margin:0;
 	padding:0;
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
+	grid-template-rows: auto;
+	column-gap: 40px;
+	row-gap: 50px;
 }
 
 .skillkuh li{
@@ -204,8 +208,8 @@ nav{
 	padding-top: 3%;
 	padding-bottom: 3%;
 	/* padding-right: -50%; */
-	margin-bottom: 50px;
-	margin-right: 70px;
+	/* margin-bottom: 50px;
+	margin-right: 70px; */
 }
 
 .skillkuh li:hover{
@@ -254,7 +258,9 @@ nav{
     list-style-type:none;
     margin:0;padding:0;
     grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
+	grid-template-rows: auto;
+	column-gap: 100px;
+	row-gap: 50px;
 }
 
 .box1, .box2, .box3, .box4{
@@ -263,7 +269,7 @@ nav{
 	background-color:rgba(0, 0, 0, 0.788);
 	border-radius: 20px;
 	padding: 5px 20px 5px 20px;
-	margin: 10px 50px 30px 30px;
+	/* margin: 10px 50px 30px 30px; */
 	box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -318,7 +324,7 @@ nav{
 }
 
 .cheader h1{
-	font-size: 300%;
+	font-size: 500%;
 	text-transform: uppercase;
 	letter-spacing: 10px;
 }
@@ -327,6 +333,7 @@ nav{
 	margin-top: -3%;
 	font-size: 100%;
 	letter-spacing: 2px;
+	margin-bottom: 5%;
 	color: #F4F7FF;
 }
 
@@ -336,7 +343,11 @@ nav{
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-    grid-template-columns: repeat(2, auto);
+	grid-template-columns: repeat(2, 50%);
+	grid-template-rows: auto;
+	row-gap: 20px;
+	column-gap: 60px;
+	max-width: 100%;
     /* grid-template-rows: repeat(2, auto); */
 }
 
@@ -362,18 +373,18 @@ nav{
 .linkedin a,
 .github a{
 	display: flex;
-	margin-bottom: 3%;
+	/* margin-bottom: 3%; */
 	justify-content: left;
-	margin-right: -1%;
+	/* margin-right: -1%; */
 }
 
 .alamat,
 .email a{
-	margin-top: 2%;
+	/* margin-top: 2%; */
 	display: flex;
-	margin-bottom: 0%;
+	/* margin-bottom: 0%; */
 	justify-content: left;
-	margin-right: -1%;
+	/* margin-right: -1%; */
 }
 
 
@@ -388,3 +399,102 @@ nav{
 	color:#F4F7FF;
 }
 
+@media screen and (max-width: 600px) {
+	
+	#main{
+		width:133vh;
+	}
+	#about{
+		width:133vh;
+	}
+	#educations{
+		width:133vh;
+	}
+	#skills{
+		width:125vh;
+		height: 85vh;
+	}
+	#contacts{
+		width:133vh;
+		height:80vh;
+	}
+
+	.contactku{
+		column-gap: 0px;
+	}
+
+	.foto img{
+		width: 70%;
+		height: 50%;
+	}
+
+	.hal1{
+		margin-left: -10%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	
+	#main{
+		width:150vh;
+		height: 130vh;
+	}
+	#about{
+		width:150vh;
+		height: 130vh;
+	}
+
+	.about1{
+		margin-top: 10%;
+	}
+
+	#educations{
+		width:150vh;
+		height: 130vh;
+	}
+
+	.eduheader{
+		margin-top: 10%;
+	}
+
+	.boxes{
+		margin-top: 5%;
+	}
+
+	#skills{
+		width:138vh;
+		height: 130vh;
+	}
+
+	.skillku{
+		margin-top: 13%;
+	}
+	#contacts{
+		width:138vh;
+		height: 120vh;
+	}
+
+	.cheader{
+		margin-top: 10%;
+	}
+
+	.cheader p{
+		margin-top: -5% ;
+		margin-bottom: 5%;
+	}
+
+	.contactku{
+		column-gap: 50px;
+		/* margin-right: 0; */
+	}
+
+	.foto img{
+		width: 80%;
+		height: 50%;
+		margin-right: 0%;
+	}
+
+	.hal1{
+		margin-left: -10%;
+	}
+}
